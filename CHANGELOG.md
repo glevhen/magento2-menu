@@ -12,10 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Improve node product validation error message on menu save (#73442)
+- Make menu CSS class field optional in menu admin edit page (#70197)
 
 ### Fixed
 - Prevent creating nodes with invalid product IDs (#73442)
 - configuration for child category type node (#74222)
+- Custom templates for node types `wrapper` and `custom_url` (#74936)
 
 ## [2.13.0] - 2020-11-16
 ### Added
@@ -33,12 +35,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Change imported menu model to API data interface in menu admin controller save action (#71279)
 - Move menu admin controller save action `execute` method current nodes list code to a separate method (#71279)
 - Replace existing nodes `in_array` check with `isset` in menu admin controller save action `execute` method (#71279)
-<<<<<<< HEAD
 - Documentation to clarify how to add a new node type (#69, #69072)
 - Render some of vue components list on server side to improve process of adding a new node type (#69, #69072)
-=======
-- Make menu CSS class field optional in menu admin edit page (#70197)
->>>>>>> feature/70197
 
 ### Fixed
 - Prevent menu stores save if there are no store changes (#115, #70191)
