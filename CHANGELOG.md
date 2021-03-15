@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Nodes custom templates documentation (#74567)
 - Menu node image field (#70218)
 - Treeselect for category selector (#69126)
+- Treeselect for child category selector (#76417)
 
 ### Changed
 - Improve node product validation error message on menu save (#73442)
