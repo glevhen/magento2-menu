@@ -116,6 +116,7 @@
                        'title': this.config.translation.addNode,
                        'id': new Date().getTime(),
                        'content': null,
+                       'node_template': null,
                        'image': this.selectedItem.image,
                        'image_alt_text': this.selectedItem.image_alt_text,
                        'node_template': null,

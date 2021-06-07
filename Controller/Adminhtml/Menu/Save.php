@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Snowdog\Menu\Controller\Adminhtml\Menu;
 
-use Magento\Backend\App\Action;
 use Magento\Framework\App\Action\HttpPostActionInterface;
 use Snowdog\Menu\Controller\Adminhtml\MenuAction;
 use Magento\Backend\App\Action\Context;
-use Magento\Catalog\Model\ProductRepository;
 use Magento\Framework\Api\FilterBuilderFactory;
 use Magento\Framework\Api\Search\FilterGroupBuilderFactory;
 use Magento\Framework\Api\SearchCriteriaBuilderFactory;
@@ -52,9 +50,6 @@ class Save extends MenuAction implements HttpPostActionInterface
 
     /** @var ImageNode */
     private $imageNode;
-
-    /** @var ProductRepository */
-    private $productRepository;
 
     /** @var MenuHydrator */
     private $hydrator;
