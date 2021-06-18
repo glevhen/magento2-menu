@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Snowdog\Menu\Model\Menu\Node\Image;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
+use Magento\Framework\File\Uploader;
 use Magento\Framework\Filesystem;
 use Magento\Framework\Image\AdapterFactory as ImageAdapterFactory;
 use Magento\Framework\UrlInterface;
@@ -78,6 +79,23 @@ class File
     {
         $mediaDirectory = $this->filesystem->getDirectoryWrite(DirectoryList::MEDIA);
         $mediaDirectory->delete(self::PATH . $file);
+    }
+
+    /**
+     * @SuppressWarnings(PHPMD.StaticAccess)
+     */
+    public function clone(string $file): string
+    {
+        $mediaDirectory = $this->filesystem->getDirectoryWrite(DirectoryList::MEDIA);
+        $file = $mediaDirectory->getAbsolutePath(self::PATH . $file);
+        $fileCloneName = Uploader::getNewFileName($file);
+        $fileCloneDispersionPath = Uploader::getDispersionPath($fileCloneName);
+        $fileClonePath = $fileCloneDispersionPath . '/' . $fileCloneName;
+        $fileClone = $mediaDirectory->getAbsolutePath(self::PATH . $fileClonePath);
+
+        $mediaDirectory->copyFile($file, $fileClone);
+
+        return $fileClonePath;
     }
 
     private function getAbsolutePath(): string
