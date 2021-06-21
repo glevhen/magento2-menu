@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Move menu controller save action complex logic to a seperate class and refactor accordingly (#69085)
 
+### Fixed
+- Remove the duplicate listing toolbar `massaction` tag in `snowmenu_menu_list.xml` (#69080)
+
 ## [2.15.0] - 2021-06-08
 ### Added
 - enable/disable menu option (#69084)
