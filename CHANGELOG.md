@@ -12,8 +12,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Move menu controller save action complex logic to a seperate class and refactor accordingly (#69085)
-
-### Changed
 - `snowmenu_menu_list.xml` delete mass action to Magento `2.1` XML format in order match the rest of the XML in the file (#69080)
 
 ### Fixed
