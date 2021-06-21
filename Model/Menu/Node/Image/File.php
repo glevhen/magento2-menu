@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Snowdog\Menu\Model\Menu\Node\Image;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
+use Magento\Framework\Exception\FileSystemException;
 use Magento\Framework\File\Uploader;
 use Magento\Framework\Filesystem;
 use Magento\Framework\Image\AdapterFactory as ImageAdapterFactory;
@@ -83,17 +84,19 @@ class File
 
     /**
      * @SuppressWarnings(PHPMD.StaticAccess)
+     * @throws FileSystemException
      */
     public function clone(string $file): string
     {
         $mediaDirectory = $this->filesystem->getDirectoryWrite(DirectoryList::MEDIA);
         $file = $mediaDirectory->getAbsolutePath(self::PATH . $file);
         $fileCloneName = Uploader::getNewFileName($file);
-        $fileCloneDispersionPath = Uploader::getDispersionPath($fileCloneName);
-        $fileClonePath = $fileCloneDispersionPath . '/' . $fileCloneName;
+        $fileClonePath = Uploader::getDispersionPath($fileCloneName) . '/' . $fileCloneName;
         $fileClone = $mediaDirectory->getAbsolutePath(self::PATH . $fileClonePath);
 
-        $mediaDirectory->copyFile($file, $fileClone);
+        if (!$mediaDirectory->copyFile($file, $fileClone)) {
+            throw new FileSystemException(__('Could not clone node image file "%1".', $file));
+        }
 
         return $fileClonePath;
     }
