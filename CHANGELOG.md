@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Remove the duplicate listing toolbar `massaction` tag in `snowmenu_menu_list.xml` (#69080)
 
+### Changed
+- `snowmenu_menu_list.xml` delete mass action to Magento `2.1` XML format in order to match the rest of the XML in the file (#69080)
+
+### Fixed
+- Remove the duplicate listing toolbar `massaction` tag in `snowmenu_menu_list.xml` (#69080)
+
 ## [2.15.0] - 2021-06-08
 ### Added
 - enable/disable menu option (#69084)
