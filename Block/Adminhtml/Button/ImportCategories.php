@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Snowdog\Menu\Block\Adminhtml\Button;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
+use Snowdog\Menu\Block\Adminhtml\Edit\Button\AbstractButton;
 
 class ImportCategories extends AbstractButton implements ButtonProviderInterface
 {
