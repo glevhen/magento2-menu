@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Make the menu duplicate feature execute in a DB transaction (#80889)
+- Refactor menu duplicate feature code in menu admin controller save and duplicate actions (#80889)
+
+### Fixed
+- Menu node image file cloner error handling (#80889)
 
 ## [2.16.0] - 2021-07-21
 ### Added
