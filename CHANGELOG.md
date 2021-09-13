@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Menu node image file cloner error handling (#80889)
+
+## [2.17.0] - 2021-09-03
+### Changed
+- Improve menu save process node product type validator error messages (#81256)
+
+### Fixed
 - Menu node position reset issues on menu save (#81257)
 
 ## [2.16.0] - 2021-07-21
