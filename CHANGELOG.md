@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Set non-nullable fields in GraphQL schema ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - Handle duplicate and empty values in GraphQL `snowdogMenus` query `identifiers` argument ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - Memoize loaded menus in GraphQL menu data provider to improve nodes loading performance ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
+- Don't print messages about custom nodes templates if they are not set (#82414)
 
 ### Fixed
 - Menu node image file cloner error handling (#80889)

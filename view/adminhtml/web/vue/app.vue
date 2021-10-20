@@ -25,7 +25,7 @@
                 :drop="handleDrop"
             >
                 <template v-if="list.length > 0">
-                    <snowdog-nested-list
+                    <nested-list
                         v-for="(item, index) in list"
                         :key="item.id"
                         :item="item"
@@ -66,7 +66,7 @@
         'Vue',
         'uuid'
     ], function(Vue, uuid) {
-        Vue.component('snowdog-menu', {
+        Vue.component('app-menu', {
             props: {
                 list: {
                     type: Array,
@@ -122,7 +122,6 @@
                        'node_template': null,
                        'image': this.selectedItem.image,
                        'image_alt_text': this.selectedItem.image_alt_text,
-                       'node_template': null,
                        'submenu_template': null,
                        'columns': [],
                        'is_active': 0
