@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Ajax loader to node image upload and remove Ajax JS code (#79674)
+- An error handler to node image remove Ajax JS code (#79674)
+- Set errors HTTP response code in node admin controller image upload and delete actions (#79674)
+
+### Changed
+- Improve JSON response in node admin controller image delete action (#79674)
+- Improve the menu node image upload error message (#79674)
+
+### Fixed
+- Image for new nodes set to blank (#79674)
+
+## [2.18.0] - 2021-11-23
+### Added
 - Menu node type GraphQL interface feature ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - `nodes` field to GraphQL menu type ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - `node_template` and `submenu_template` fields to GraphQL menu node type ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
