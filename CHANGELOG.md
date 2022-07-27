@@ -7,23 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Ajax loader to node image upload and remove Ajax JS code (#79674)
-- An error handler to node image remove Ajax JS code (#79674)
-- Set errors HTTP response code in node admin controller image upload and delete actions (#79674)
-- Allow to set submenu template via layout xml ([#223](https://github.com/SnowdogApps/magento2-menu/issues/223))
-
 ### Changed
-- Improve JSON response in node admin controller image delete action (#79674)
-- Improve the menu node image upload error message (#79674)
-
 ### Fixed
-- Image for new nodes set to blank (#79674)
+
+## [2.19.0] - 2022-05-04
+### Added
+- Allow to set submenu template via layout xml ([#223](https://github.com/SnowdogApps/magento2-menu/issues/223))
 - Fix menu stores save issue when single store mode enabled ([#226](https://github.com/SnowdogApps/magento2-menu/issues/226))
 - Fix duplicate keys detected for nodes ([#228](https://github.com/SnowdogApps/magento2-menu/issues/228))
 - Fix drag and drop nodes duplication when editing menu nodes ([#241](https://github.com/SnowdogApps/magento2-menu/issues/241))
 - Ajax loader to node image upload and remove Ajax JS code (#79674)
 - An error handler to node image remove Ajax JS code (#79674)
 - Set errors HTTP response code in node admin controller image upload and delete actions (#79674)
+- Fix loading nodes based on large catalog ([#232](https://github.com/SnowdogApps/magento2-menu/issues/232))
 
 ### Changed
 - Improve JSON response in node admin controller image delete action (#79674)
@@ -31,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Image for new nodes set to blank (#79674)
+- import from categories ([#236](https://github.com/SnowdogApps/magento2-menu/issues/236))
 
 ## [2.18.0] - 2021-11-23
 ### Added
@@ -44,11 +41,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Make the menu duplicate feature execute in a DB transaction (#80889)
 - Refactor menu duplicate feature code in menu admin controller save and duplicate actions (#80889)
+- Don't print messages about custom nodes templates if they are not set (#82414)
 - GraphQL menu custom URL node `target` field data type to boolean ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - Set non-nullable fields in GraphQL schema ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - Handle duplicate and empty values in GraphQL `snowdogMenus` query `identifiers` argument ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
 - Memoize loaded menus in GraphQL menu data provider to improve nodes loading performance ([#209](https://github.com/SnowdogApps/magento2-menu/issues/209))
-- Don't print messages about custom nodes templates if they are not set (#82414)
 
 ### Fixed
 - Menu node image file cloner error handling (#80889)
@@ -107,8 +104,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Nodes custom templates documentation (#74567)
 - Menu node image field (#70218)
 - Treeselect for category selector (#69126)
-- Treeselect for child category selector (#76417)
 - GraphQL feature (#76409)
+- Treeselect for child category selector (#76417)
 
 ### Changed
 - Improve node product validation error message on menu save (#73442)
