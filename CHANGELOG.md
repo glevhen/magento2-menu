@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
+
+## [2.25.0] - 2024-01-19
+### Added
+- 3-level desktop submenu variant (DEV-103924)
 ### Fixed
 -  category tree import when page url includes index.php (DEV-103904)
 
