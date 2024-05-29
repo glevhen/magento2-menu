@@ -146,12 +146,6 @@
                             ...node,
                             id: this.uuid(),
                             uuid: this.uuid(),
-                            // TODO: support for image duplication - copying values isn't enough
-                            image: null,
-                            image_url: null,
-                            image_alt_text: null,
-                            image_width: null,
-                            image_height: null,
                         };
                         if (node.columns?.length) {
                             node.columns = node.columns.map(this.setUniqueIds);
